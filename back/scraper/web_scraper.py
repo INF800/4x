@@ -1,6 +1,5 @@
 import requests
 from requests_html import HTMLSession
- 
 
 class WebScraper:
 
@@ -9,7 +8,7 @@ class WebScraper:
         self.cur_response = None
 
     def goto(self, uri):
-        """ mutates response """
+        """ mutate `self.cur_response` """
         try:
             self.cur_response = \
                 self.sess.get(uri)
@@ -18,14 +17,7 @@ class WebScraper:
 
     def get_response(self):
         return self.cur_response
-    
 
-
-if __name__ == '__main__':
-
-    uri = 'https://www.investing.com/technical/technical-summary'
-    
-    scraper = WebScraper()
-    scraper.goto(uri)
-    print(scraper.get_response())
-
+    def find(self, s, **kwargs):
+        """finds html tags, .classes, #ids"""
+        return self.cur_response.html.find(s, **kwargs)
