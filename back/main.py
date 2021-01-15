@@ -78,4 +78,5 @@ def get_live_bar_data(req: LiveBarRequest):
             'value': pair_scores.scores[pair_info['Pair']]
         })
 
+    print(chart_data)
     return chart_data
