@@ -1,4 +1,4 @@
-## FourX 🤑 📈
+## ForeX 🤑 📈
 
 >
 > **Note:** For educational purposes only. No harm is intended. Project will be active on fridays, staurdays and sundays.
