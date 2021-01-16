@@ -1,7 +1,7 @@
 ## FourX 🤑 📈
 
 >
-> **Note:** For educational purposes only. No harm is intended. Project will be active on fridays, staurdays and sundays.
+> **Note:** For educational purposes only. No harm is intended. Project will be active on fridays, staurdays and sundays when market is closed.
 >
 
 **More information coming soon!**
