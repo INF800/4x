@@ -156,7 +156,7 @@ var pullData = function(settings,callback){
 		callback(settings, resp.data)
 	})
 	/*
-	d3.json("modules/live_bar/fakeData.json", function (err, data){
+	d3.json("modules/livestrongbar/fakeData.json", function (err, data){
 		if (err) return console.warn(err);
 
 		var newData = data;
