@@ -33,22 +33,11 @@ class SummaryTableScraper(WebScraper):
 
 def proc_pair_info(pair_info):
     """
-    log scraped data
+    return true if all are either `Strong Buy` OR `Strong Sell`
     """
-    # print("="*100)
-    # print(f"+ {pair_info['Pair']} [{pair_info['Ratio']}]")
-    # print("="*100)
-    # print(f"5 Min: \t {pair_info['Summary'][0]}")
-    # print(f"15 Min: \t {pair_info['Summary'][1]}")
-    # print(f"1 Hr: \t {pair_info['Summary'][2]}")
-    # print(f"1 Day: \t {pair_info['Summary'][3]}")
-
-    for summ in pair_info['Summary']:
-        if summ[:6] != 'Strong':
-            return False
-    print(f"{pair_info['Pair']} >>> {pair_info['Summary'][0]} \t\t(5min 15min 1hr 1day)")
-    return True
-
+    if (len(set(pair_info['Summary'])) == 1) and (pair_info['Summary'][0][:6] == 'Strong'):
+        return True
+    return False
 
 
 class PairScores:
