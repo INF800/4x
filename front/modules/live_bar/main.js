@@ -149,7 +149,7 @@ var redrawChart = function(targetID, newdata) {
 //Since our data is fake, adds some random changes to simulate a data stream.
 //Uses a callback because d3.json loading is asynchronous
 var pullData = function(settings,callback){
-	axios.post('http://localhost:8000/livebardata/', {
+	axios.post('http://localhost:3000/livebardata/', {
 		msg: 'string'
 	}).then(resp =>{
 		//console.log(resp.data)

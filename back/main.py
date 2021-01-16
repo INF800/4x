@@ -43,6 +43,7 @@ class LiveBarRequest(BaseModel):
 # --------------------------------------------------------------------------------------------------
 from scraper.investing.summary_table_scraper import uri as investing_uri
 from scraper.investing.summary_table_scraper import SummaryTableScraper, proc_pair_info, PairScores
+from scraper.investing.summary_table_fakedata import summary_table_fakedata 
 
 scraper = SummaryTableScraper(uri=investing_uri, class_name='technicalSummaryTbl')
 pair_scores = PairScores()
@@ -54,13 +55,19 @@ pair_scores = PairScores()
 # ==================================================================================================
 # routes
 # ==================================================================================================
+cntr = -1
 @app.post("/livebardata")
 def get_live_bar_data(req: LiveBarRequest):
     """
     returns reatime data for d3 chart
     """
     scraper.goto(investing_uri)
-    data = scraper.get_pairs_info()
+    #data = scraper.get_pairs_info()
+
+    global cntr
+    cntr += 1
+    data = summary_table_fakedata[cntr]
+
     chart_data = []
 
     for _, pair_info in data.items():
@@ -78,5 +85,4 @@ def get_live_bar_data(req: LiveBarRequest):
             'value': pair_scores.scores[pair_info['Pair']]
         })
 
-    print(chart_data)
     return chart_data
