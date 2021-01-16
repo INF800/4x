@@ -43,7 +43,7 @@ class LiveBarRequest(BaseModel):
 # --------------------------------------------------------------------------------------------------
 from scraper.investing.summary_table_scraper import uri as investing_uri
 from scraper.investing.summary_table_scraper import SummaryTableScraper, proc_pair_info, PairScores
-from scraper.investing.summary_table_fakedata import summary_table_fakedata 
+from scraper.investing.summary_table_fakedata import summary_table_fakedata, max_cntr
 
 scraper = SummaryTableScraper(uri=investing_uri, class_name='technicalSummaryTbl')
 pair_scores = PairScores()
@@ -66,10 +66,9 @@ def get_live_bar_data(req: LiveBarRequest):
 
     global cntr
     cntr += 1
-    data = summary_table_fakedata[cntr]
+    data = summary_table_fakedata[cntr%max_cntr]
 
     chart_data = []
-
     for _, pair_info in data.items():
         strong = proc_pair_info(pair_info)
         
@@ -84,5 +83,4 @@ def get_live_bar_data(req: LiveBarRequest):
             'key': pair_info['Pair'] + " " + strong_buy_or_sell,
             'value': pair_scores.scores[pair_info['Pair']]
         })
-
     return chart_data
