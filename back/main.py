@@ -57,13 +57,16 @@ pair_scores = PairScores()
 # ==================================================================================================
 cntr = -1
 @app.post("/livebardata")
-def get_live_bar_data(req: LiveBarRequest):
+def get_livestrongbar_data(req: LiveBarRequest):
     """
     returns reatime data for d3 chart
     """
-    scraper.goto(investing_uri)
-    #data = scraper.get_pairs_info()
+    
+    # realtime data
+    # scraper.goto(investing_uri)
+    # data = scraper.get_pairs_info()
 
+    # fake data
     global cntr
     cntr += 1
     data = summary_table_fakedata[cntr%max_cntr]
