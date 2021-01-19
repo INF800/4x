@@ -63,13 +63,13 @@ def get_livestrongbar_data(req: LiveBarRequest):
     """
     
     # realtime data
-    # scraper.goto(investing_uri)
-    # data = scraper.get_pairs_info()
+    scraper.goto(investing_uri)
+    data = scraper.get_pairs_info()
 
     # fake data
-    global cntr
-    cntr += 1
-    data = summary_table_fakedata[cntr%max_cntr]
+    # global cntr
+    # cntr += 1
+    # data = summary_table_fakedata[cntr%max_cntr]
 
     chart_data = []
     for _, pair_info in data.items():
