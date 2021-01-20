@@ -191,4 +191,4 @@ redraw(settings)
 //Repeat every 3 seconds
 setInterval(function(){
 	redraw(settings)
-}, 3000); // 3000 = 3 secs
+}, 10000); // 3000 = 3 secs

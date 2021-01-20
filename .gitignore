@@ -1,6 +1,9 @@
+*.db
+nohup.out
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,vscode,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,vscode,python
+
 
 ### macOS ###
 # General
