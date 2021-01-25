@@ -1,4 +1,4 @@
-from scraper.web_scraper import WebScraper
+from module.scraper.web_scraper import WebScraper
 
 uri = 'https://www.investing.com/technical/technical-summary'
 

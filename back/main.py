@@ -41,9 +41,9 @@ class LiveBarRequest(BaseModel):
 # --------------------------------------------------------------------------------------------------
 # investing.com summary scraper 
 # --------------------------------------------------------------------------------------------------
-from scraper.investing.summary_table_scraper import uri as investing_uri
-from scraper.investing.summary_table_scraper import SummaryTableScraper, proc_pair_info, PairScores
-from scraper.investing.summary_table_fakedata import summary_table_fakedata, max_cntr
+from module.scraper.investing.summary_table_scraper import uri as investing_uri
+from module.scraper.investing.summary_table_scraper import SummaryTableScraper, proc_pair_info, PairScores
+from module.scraper.investing.summary_table_fakedata import summary_table_fakedata, max_cntr
 
 scraper = SummaryTableScraper(uri=investing_uri, class_name='technicalSummaryTbl')
 pair_scores = PairScores()
