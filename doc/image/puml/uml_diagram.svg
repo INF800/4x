@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1263px" preserveAspectRatio="none" style="width:960px;height:1263px;" version="1.1" viewBox="0 0 960 1263" width="960px" zoomAndPan="magnify"><defs><filter height="300%" id="f1uxzjmy0cal74" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6247e0fd17e0c77a6019420b3d4f7291]
+class **WebScraper**--><rect codeLine="9" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="110.0234" id="**WebScraper**" style="stroke:#AAAAAA;stroke-width:1.5;" width="156" x="369" y="141"/><ellipse cx="404" cy="154" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M406.125,157.5625 Q405.5469,157.8594 404.9219,158 Q404.3125,158.1563 403.6406,158.1563 Q401.6406,158.1563 400.4688,157.0469 Q399.2969,155.9219 399.2969,154 Q399.2969,152.0781 400.4688,150.9531 Q401.6406,149.8281 403.6406,149.8281 Q404.3125,149.8281 404.9219,149.9844 Q405.5469,150.1406 406.125,150.4375 L406.125,152.0938 Q405.5469,151.7031 404.9844,151.5156 Q404.4219,151.3281 403.8125,151.3281 Q402.7031,151.3281 402.0625,152.0469 Q401.4375,152.75 401.4375,154 Q401.4375,155.2344 402.0625,155.9531 Q402.7031,156.6563 403.8125,156.6563 Q404.4219,156.6563 404.9844,156.4844 Q405.5469,156.2969 406.125,155.9063 L406.125,157.5625 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="79" x="420" y="157.8081">WebScraper</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="370" x2="524" y1="167" y2="167"/><ellipse cx="380" cy="178" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="26" x="386" y="181.2104">sess</text><ellipse cx="380" cy="190.8047" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="386" y="194.0151">cur_response</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="370" x2="524" y1="200.6094" y2="200.6094"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="375" y="214.8198">cur_response &lt;- goto(uri)</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="375" y="244.4292">find()</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="370" x2="402" y1="227.8164" y2="227.8164"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="402" y="231.1245">Helper Methods</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="492" x2="524" y1="227.8164" y2="227.8164"/><path d="M152.5,157 L152.5,192.6094 A0,0 0 0 0 152.5,192.6094 L333.5,192.6094 A0,0 0 0 0 333.5,192.6094 L333.5,178.8047 L373,211.0117 L333.5,170.8047 L333.5,167 L323.5,157 L152.5,157 A0,0 0 0 0 152.5,157 " fill="#FFFFFF" filter="url(#f1uxzjmy0cal74)" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M323.5,157 L323.5,167 L333.5,167 L323.5,157 " fill="#FFFFFF" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="160" x="158.5" y="172.2104">fetch html data from uri and</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="123" x="158.5" y="185.0151">store in cur_response</text><path d="M152.5,202.6094 L152.5,225.4141 A0,0 0 0 0 152.5,225.4141 L329.5,225.4141 A0,0 0 0 0 329.5,225.4141 L329.5,220.6094 L373,240.6211 L329.5,212.6094 L329.5,212.6094 L319.5,202.6094 L152.5,202.6094 A0,0 0 0 0 152.5,202.6094 " fill="#FFFFFF" filter="url(#f1uxzjmy0cal74)" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M319.5,202.6094 L319.5,212.6094 L329.5,212.6094 L319.5,202.6094 " fill="#FFFFFF" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="158.5" y="217.8198">finds html tags, classes, ids</text><!--MD5=[78580c68f0cf9cda58049b20eb3b95fa]
+class SummaryTableScraper--><rect codeLine="28" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="110.8281" id="SummaryTableScraper" style="stroke:#AAAAAA;stroke-width:1.5;" width="184" x="343" y="363.5"/><ellipse cx="367.15" cy="381.3047" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M369.275,384.8672 Q368.6969,385.1641 368.0719,385.3047 Q367.4625,385.4609 366.7906,385.4609 Q364.7906,385.4609 363.6188,384.3516 Q362.4469,383.2266 362.4469,381.3047 Q362.4469,379.3828 363.6188,378.2578 Q364.7906,377.1328 366.7906,377.1328 Q367.4625,377.1328 368.0719,377.2891 Q368.6969,377.4453 369.275,377.7422 L369.275,379.3984 Q368.6969,379.0078 368.1344,378.8203 Q367.5719,378.6328 366.9625,378.6328 Q365.8531,378.6328 365.2125,379.3516 Q364.5875,380.0547 364.5875,381.3047 Q364.5875,382.5391 365.2125,383.2578 Q365.8531,383.9609 366.9625,383.9609 Q367.5719,383.9609 368.1344,383.7891 Q368.6969,383.6016 369.275,383.2109 L369.275,384.8672 Z " fill="#000000"/><text fill="#333333" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="93" x="399.85" y="378.7104">«investing.com»</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="131" x="380.85" y="391.5151">SummaryTableScraper</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="344" x2="526" y1="399.1094" y2="399.1094"/><polygon fill="#4177AF" points="354,406.1094,350,412.1094,358,412.1094" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="360" y="413.3198">get_technical_summary()</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="344" x2="526" y1="419.9141" y2="419.9141"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="87" x="349" y="434.1245">get_pairs_info()</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="344" x2="526" y1="440.7188" y2="440.7188"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="349" y="454.9292">use get_technical_summary()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="349" y="467.7339">and return summary dictonary</text><rect fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="48.0859" style="stroke:#AAAAAA;stroke-width:1.5;" width="164" x="353" y="594"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="77" x="396.5" y="606.2104">table_scraper</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="354" x2="516" y1="610.8047" y2="610.8047"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="152" x="359" y="624.0869">fetch reatime summary and</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="90" x="359" y="635.7275">send to frontend</text><path d="M126.5,396 L126.5,431.6094 A0,0 0 0 0 126.5,431.6094 L307.5,431.6094 A0,0 0 0 0 307.5,431.6094 L307.5,417.8047 L347,409.5117 L307.5,409.8047 L307.5,406 L297.5,396 L126.5,396 A0,0 0 0 0 126.5,396 " fill="#FFFFFF" filter="url(#f1uxzjmy0cal74)" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M297.5,396 L297.5,406 L307.5,406 L297.5,396 " fill="#FFFFFF" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="132.5" y="411.2104">return intermediate data of</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="135" x="132.5" y="424.0151">scraped summary table</text><!--MD5=[112dad81b2692e33777cbe3e4702ad92]
+class LiveCurPairScraper--><rect codeLine="52" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="187.6563" id="LiveCurPairScraper" style="stroke:#AAAAAA;stroke-width:1.5;" width="133" x="562.5" y="325"/><ellipse cx="574.5" cy="342.8047" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M576.625,346.3672 Q576.0469,346.6641 575.4219,346.8047 Q574.8125,346.9609 574.1406,346.9609 Q572.1406,346.9609 570.9688,345.8516 Q569.7969,344.7266 569.7969,342.8047 Q569.7969,340.8828 570.9688,339.7578 Q572.1406,338.6328 574.1406,338.6328 Q574.8125,338.6328 575.4219,338.7891 Q576.0469,338.9453 576.625,339.2422 L576.625,340.8984 Q576.0469,340.5078 575.4844,340.3203 Q574.9219,340.1328 574.3125,340.1328 Q573.2031,340.1328 572.5625,340.8516 Q571.9375,341.5547 571.9375,342.8047 Q571.9375,344.0391 572.5625,344.7578 Q573.2031,345.4609 574.3125,345.4609 Q574.9219,345.4609 575.4844,345.2891 Q576.0469,345.1016 576.625,344.7109 L576.625,346.3672 Z " fill="#000000"/><text fill="#333333" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="93" x="592.5" y="340.2104">«investing.com»</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="107" x="585.5" y="353.0151">LiveCurPairScraper</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="563.5" x2="694.5" y1="360.6094" y2="360.6094"/><ellipse cx="573.5" cy="371.6094" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="44" x="579.5" y="374.8198">cur_pair</text><ellipse cx="573.5" cy="384.4141" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="579.5" y="387.6245">interval</text><ellipse cx="573.5" cy="397.2188" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="14" x="579.5" y="400.4292">uri</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="563.5" x2="694.5" y1="407.0234" y2="407.0234"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="568.5" y="421.2339">get_data()</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="563.5" x2="694.5" y1="427.8281" y2="427.8281"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="568.5" y="442.0386">return</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="568.5" y="454.8433">• req_time</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="568.5" y="467.6479">• response_time</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="568.5" y="480.4526">• close</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="568.5" y="493.2573">• per_change</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="99" x="568.5" y="506.062">• other indicators</text><rect fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="56.0859" style="stroke:#AAAAAA;stroke-width:1.5;" width="127" x="565.5" y="168"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="87" x="585.5" y="180.2104">eurusd_scraper</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="566.5" x2="691.5" y1="184.8047" y2="184.8047"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="56" x="571.5" y="198.0869">get_data()</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="566.5" x2="691.5" y1="204.4453" y2="204.4453"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="115" x="571.5" y="217.7275">fetch realtime values</text><!--MD5=[62c271af607cd362ea56dd62b6102a88]
+class DataValidator--><rect codeLine="78" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="54.8047" id="DataValidator" style="stroke:#AAAAAA;stroke-width:1.5;" width="132" x="7" y="590.5"/><ellipse cx="32.05" cy="603.5" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M34.175,607.0625 Q33.5969,607.3594 32.9719,607.5 Q32.3625,607.6563 31.6906,607.6563 Q29.6906,607.6563 28.5187,606.5469 Q27.3469,605.4219 27.3469,603.5 Q27.3469,601.5781 28.5187,600.4531 Q29.6906,599.3281 31.6906,599.3281 Q32.3625,599.3281 32.9719,599.4844 Q33.5969,599.6406 34.175,599.9375 L34.175,601.5938 Q33.5969,601.2031 33.0344,601.0156 Q32.4719,600.8281 31.8625,600.8281 Q30.7531,600.8281 30.1125,601.5469 Q29.4875,602.25 29.4875,603.5 Q29.4875,604.7344 30.1125,605.4531 Q30.7531,606.1563 31.8625,606.1563 Q32.4719,606.1563 33.0344,605.9844 Q33.5969,605.7969 34.175,605.4063 L34.175,607.0625 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="77" x="45.95" y="607.3081">DataValidator</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="8" x2="138" y1="616.5" y2="616.5"/><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="8" x2="138" y1="624.5" y2="624.5"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="13" y="638.7104">clean_realime_data()</text><rect fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="59.7266" style="stroke:#AAAAAA;stroke-width:1.5;" width="162" x="548" y="7"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="148" x="555" y="19.2104">eurusd_realtime_validator</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="549" x2="709" y1="23.8047" y2="23.8047"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="128" x="554" y="37.0869">clean reatime data and</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="136" x="554" y="48.7275">return cleaned data dicts</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="138" x="554" y="60.3682">corresponding to schema</text><rect fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="56.0859" style="stroke:#AAAAAA;stroke-width:1.5;" width="172" x="728" y="168"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="88" x="770" y="180.2104">eurusd_handler</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="729" x2="899" y1="184.8047" y2="184.8047"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="85" x="734" y="198.0869">store data in db</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="729" x2="899" y1="204.4453" y2="204.4453"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="160" x="734" y="217.7275">get real-time data on request</text><!--MD5=[27cc47ae296600f42d47679d519987c5]
+class **PostgresDB**--><rect codeLine="96" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="101.2188" id="**PostgresDB**" style="stroke:#AAAAAA;stroke-width:1.5;" width="155" x="502.5" y="973"/><ellipse cx="537" cy="986" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M539.125,989.5625 Q538.5469,989.8594 537.9219,990 Q537.3125,990.1563 536.6406,990.1563 Q534.6406,990.1563 533.4688,989.0469 Q532.2969,987.9219 532.2969,986 Q532.2969,984.0781 533.4688,982.9531 Q534.6406,981.8281 536.6406,981.8281 Q537.3125,981.8281 537.9219,981.9844 Q538.5469,982.1406 539.125,982.4375 L539.125,984.0938 Q538.5469,983.7031 537.9844,983.5156 Q537.4219,983.3281 536.8125,983.3281 Q535.7031,983.3281 535.0625,984.0469 Q534.4375,984.75 534.4375,986 Q534.4375,987.2344 535.0625,987.9531 Q535.7031,988.6563 536.8125,988.6563 Q537.4219,988.6563 537.9844,988.4844 Q538.5469,988.2969 539.125,987.9063 L539.125,989.5625 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="79" x="553" y="989.8081">PostgresDB</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="503.5" x2="656.5" y1="999" y2="999"/><ellipse cx="513.5" cy="1010" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="519.5" y="1013.2104">conn_details</text><ellipse cx="513.5" cy="1022.8047" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="51" x="519.5" y="1026.0151">self.conn</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="503.5" x2="656.5" y1="1032.6094" y2="1032.6094"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="508.5" y="1046.8198">self.conn &lt;- reset_conn()</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="503.5" x2="656.5" y1="1053.4141" y2="1053.4141"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="508.5" y="1067.6245">execute(sql_query)</text><path d="M692.5,1007 L692.5,1014.4023 L651.5,1043.0117 L692.5,1022.4023 L692.5,1029.8047 A0,0 0 0 0 692.5,1029.8047 L899.5,1029.8047 A0,0 0 0 0 899.5,1029.8047 L899.5,1017 L889.5,1007 L692.5,1007 A0,0 0 0 0 692.5,1007 " fill="#FFFFFF" filter="url(#f1uxzjmy0cal74)" style="stroke:#FFFFFF;stroke-width:1.0;"/><path d="M889.5,1007 L889.5,1017 L899.5,1017 L889.5,1007 " fill="#FFFFFF" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="186" x="698.5" y="1022.2104">close conn and create new conn</text><!--MD5=[c071e6e0e4cc59fd30c18b139b00ab0e]
+class CurPairDataHandler--><rect codeLine="110" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="101.2188" id="CurPairDataHandler" style="stroke:#AAAAAA;stroke-width:1.5;" width="136" x="778" y="1148"/><ellipse cx="790" cy="1161" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M792.125,1164.5625 Q791.5469,1164.8594 790.9219,1165 Q790.3125,1165.1563 789.6406,1165.1563 Q787.6406,1165.1563 786.4688,1164.0469 Q785.2969,1162.9219 785.2969,1161 Q785.2969,1159.0781 786.4688,1157.9531 Q787.6406,1156.8281 789.6406,1156.8281 Q790.3125,1156.8281 790.9219,1156.9844 Q791.5469,1157.1406 792.125,1157.4375 L792.125,1159.0938 Q791.5469,1158.7031 790.9844,1158.5156 Q790.4219,1158.3281 789.8125,1158.3281 Q788.7031,1158.3281 788.0625,1159.0469 Q787.4375,1159.75 787.4375,1161 Q787.4375,1162.2344 788.0625,1162.9531 Q788.7031,1163.6563 789.8125,1163.6563 Q790.4219,1163.6563 790.9844,1163.4844 Q791.5469,1163.2969 792.125,1162.9063 L792.125,1164.5625 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="110" x="801" y="1164.8081">CurPairDataHandler</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="779" x2="913" y1="1174" y2="1174"/><ellipse cx="789" cy="1185" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="795" y="1188.2104">conn details</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="779" x2="913" y1="1194.8047" y2="1194.8047"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="784" y="1209.0151">put_data()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="784" y="1221.8198">get_data()</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="779" x2="913" y1="1228.4141" y2="1228.4141"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="784" y="1242.6245">get_realtime_data()</text><!--MD5=[163b5c643111e3f0507b703cc18aeb73]
+class PredDataHandler--><rect codeLine="128" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="54.8047" id="PredDataHandler" style="stroke:#AAAAAA;stroke-width:1.5;" width="122" x="523" y="844"/><ellipse cx="535" cy="857" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M537.125,860.5625 Q536.5469,860.8594 535.9219,861 Q535.3125,861.1563 534.6406,861.1563 Q532.6406,861.1563 531.4688,860.0469 Q530.2969,858.9219 530.2969,857 Q530.2969,855.0781 531.4688,853.9531 Q532.6406,852.8281 534.6406,852.8281 Q535.3125,852.8281 535.9219,852.9844 Q536.5469,853.1406 537.125,853.4375 L537.125,855.0938 Q536.5469,854.7031 535.9844,854.5156 Q535.4219,854.3281 534.8125,854.3281 Q533.7031,854.3281 533.0625,855.0469 Q532.4375,855.75 532.4375,857 Q532.4375,858.2344 533.0625,858.9531 Q533.7031,859.6563 534.8125,859.6563 Q535.4219,859.6563 535.9844,859.4844 Q536.5469,859.2969 537.125,858.9063 L537.125,860.5625 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="96" x="546" y="860.8081">PredDataHandler</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="524" x2="644" y1="870" y2="870"/><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="524" x2="644" y1="878" y2="878"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="529" y="892.2104">put_predicton()</text><rect fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="59.7266" style="stroke:#AAAAAA;stroke-width:1.5;" width="146" x="526" y="723"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="105" x="546.5" y="735.2104">prediction_handler</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="527" x2="671" y1="739.8047" y2="739.8047"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="109" x="532" y="753.0869">store predictions wrt</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="134" x="532" y="764.7275">model and data versions</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="96" x="532" y="776.3682">and hyperparams</text><!--MD5=[07f7630fd46916405c597fd95f2f5dc0]
+class RealtimePredictor--><rect codeLine="145" fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="88.4141" id="RealtimePredictor" style="stroke:#AAAAAA;stroke-width:1.5;" width="126" x="751" y="574"/><ellipse cx="763" cy="587" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M765.125,590.5625 Q764.5469,590.8594 763.9219,591 Q763.3125,591.1563 762.6406,591.1563 Q760.6406,591.1563 759.4688,590.0469 Q758.2969,588.9219 758.2969,587 Q758.2969,585.0781 759.4688,583.9531 Q760.6406,582.8281 762.6406,582.8281 Q763.3125,582.8281 763.9219,582.9844 Q764.5469,583.1406 765.125,583.4375 L765.125,585.0938 Q764.5469,584.7031 763.9844,584.5156 Q763.4219,584.3281 762.8125,584.3281 Q761.7031,584.3281 761.0625,585.0469 Q760.4375,585.75 760.4375,587 Q760.4375,588.2344 761.0625,588.9531 Q761.7031,589.6563 762.8125,589.6563 Q763.4219,589.6563 763.9844,589.4844 Q764.5469,589.2969 765.125,588.9063 L765.125,590.5625 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="100" x="774" y="590.8081">RealtimePredictor</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="752" x2="876" y1="600" y2="600"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="757" y="614.2104">preprocess()</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="752" x2="876" y1="620.8047" y2="620.8047"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="47" x="757" y="635.0151">predict()</text><line style="stroke:#AAAAAA;stroke-width:1.0;" x1="752" x2="876" y1="641.6094" y2="641.6094"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="757" y="655.8198">postprocess()</text><rect fill="#CCCCCC" filter="url(#f1uxzjmy0cal74)" height="36.4453" style="stroke:#AAAAAA;stroke-width:1.5;" width="167" x="730.5" y="401"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="100" x="764" y="413.2104">realime_predictor</text><line style="stroke:#AAAAAA;stroke-width:1.5;" x1="731.5" x2="896.5" y1="417.8047" y2="417.8047"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="155" x="736.5" y="431.0869">predict and store in frontend</text><!--MD5=[b8d68129c259ad9f3b5a8600174b3263]
+link **WebScraper**$$$LEFT to **WebScraper**--><!--MD5=[ea672609407b99967f62d1e49ea1c299]
+reverse link SummaryTableScraper to table_scraper--><path codeLine="41" d="M435,494.746 C435,530.041 435,569.663 435,593.976 " fill="none" id="SummaryTableScraper-backto-table_scraper" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="428,494.614,435,474.614,442,494.614,428,494.614" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[22025223f7168640345ff7db58304b34]
+reverse link **WebScraper** to SummaryTableScraper--><path codeLine="43" d="M443.778,256.334 C441.971,289.619 439.732,330.852 437.968,363.345 " fill="none" id="**WebScraper**-backto-SummaryTableScraper" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="444.064,251.063,439.5813,259.8326,443.7926,256.0556,447.5696,260.2669,444.064,251.063" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="28" x="444" y="292.2104">base</text><!--MD5=[6a2c4b4cd187db935add54c6e784cd96]
+link SummaryTableScraper$$$LEFT to SummaryTableScraper--><!--MD5=[a3cf5dbe0c2e402dbbf4605203b71e94]
+reverse link **WebScraper** to LiveCurPairScraper--><path codeLine="67" d="M494.796,255.037 C515.403,280.06 539.859,309.757 562.213,336.901 " fill="none" id="**WebScraper**-backto-LiveCurPairScraper" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="491.522,251.063,494.1553,260.5533,494.7004,254.9228,500.3309,255.4679,491.522,251.063" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="28" x="529" y="292.2104">base</text><!--MD5=[5d666567e6099e3ab26ba2c3116d6a1d]
+link eurusd_scraper to LiveCurPairScraper--><path codeLine="75" d="M629,224.1 C629,244.71 629,274.567 629,304.705 " fill="none" id="eurusd_scraper-to-LiveCurPairScraper" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="636,304.977,629,324.977,622,304.977,636,304.977" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[3e9adcaf37eb0311675be055b2247dfe]
+link eurusd_realtime_validator to DataValidator--><path codeLine="87" d="M547.85,43.81 C422.455,54.56 190.255,82.02 135,141 C23.335,260.192 46.3057,475.863 63.2133,570.435 " fill="none" id="eurusd_realtime_validator-to-DataValidator" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="70.1173,569.27,66.9875,590.228,56.3651,571.893,70.1173,569.27" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[aa8bc5219d17b8b66d41337f48113734]
+reverse link eurusd_realtime_validator to eurusd_scraper--><path codeLine="89" d="M629,72.38 C629,101.06 629,141.37 629,167.83 " fill="none" id="eurusd_realtime_validator-backto-eurusd_scraper" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="629,67.16,625,76.16,629,72.16,633,76.16,629,67.16" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[409ed52cc5f940966c54847b159f9b7e]
+link eurusd_realtime_validator to eurusd_handler--><path codeLine="90" d="M663.364,67.16 C695.997,94.86 744.866,136.33 778.022,164.47 " fill="none" id="eurusd_realtime_validator-to-eurusd_handler" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="781.986,167.83,777.7104,158.9576,778.1731,164.5955,772.5352,165.0582,781.986,167.83" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="61" x="712" y="108.2104">store in db</text><!--MD5=[82e4a44a4d18c4be450db69dd97390cf]
+link **PostgresDB**$$$LEFT to **PostgresDB**--><!--MD5=[72a20b59fbb6a7cd0cd90010cd61ccb8]
+reverse link **PostgresDB** to CurPairDataHandler--><path codeLine="119" d="M660.757,1077.023 C698.196,1101.372 742.203,1129.993 777.927,1153.2272 " fill="none" id="**PostgresDB**-backto-CurPairDataHandler" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="656.225,1074.075,661.5873,1082.3361,660.416,1076.8018,665.9502,1075.6305,656.225,1074.075" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="28" x="722" y="1115.2104">base</text><!--MD5=[16291bfcd4a9667b8df521376493d305]
+link eurusd_handler to CurPairDataHandler--><path codeLine="126" d="M859.447,224.01 C880.148,238.47 903.266,258.052 918,281 C951.953,333.883 953,355.155 953,418 C953,418 953,418 953,1024.5 C953,1063.832 932.747,1101.686 909.864,1131.902 " fill="none" id="eurusd_handler-to-CurPairDataHandler" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="914.996,1136.69,896.993,1147.864,904.098,1127.902,914.996,1136.69" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[6ff78ff65c6ffbb6bbb60668ffbab619]
+link PredDataHandler to **PostgresDB**--><path codeLine="132" d="M583.285,899.317 C582.779,918.276 582.084,944.359 581.463,967.644 " fill="none" id="PredDataHandler-to-**PostgresDB**" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="581.323,972.874,585.5633,963.9847,581.4573,967.8758,577.5661,963.7698,581.323,972.874" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="28" x="584" y="940.2104">base</text><!--MD5=[4d19113736842e2948b40ec36f987f09]
+link prediction_handler to PredDataHandler--><path codeLine="139" d="M595.254,783.097 C593.682,795.304 591.814,809.813 590.056,823.467 " fill="none" id="prediction_handler-to-PredDataHandler" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="596.939,824.823,587.442,843.766,583.054,823.036,596.939,824.823" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[3cf4899cbf1000cbac29293a2c185b8c]
+link realime_predictor to RealtimePredictor--><path codeLine="157" d="M814,437.138 C814,462.945 814,513.107 814,553.915 " fill="none" id="realime_predictor-to-RealtimePredictor" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="821,553.928,814,573.928,807,553.928,821,553.928" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[aa7806ee0eac5c0419191bd34fb57407]
+link eurusd_handler to realime_predictor--><path codeLine="158" d="M814,224.1 C814,268.222 814,354.761 814,395.623 " fill="none" id="eurusd_handler-to-realime_predictor" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="814,400.842,818,391.842,814,395.842,810,391.842,814,400.842" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="94" x="815" y="292.2104">real-time values</text><!--MD5=[f69a06c9e1d24c993b326d5e6c0fda9a]
+link realime_predictor to prediction_handler--><path codeLine="159" d="M793.81,437.066 C763.426,463.649 705.708,517.76 670,574 C640.645,620.235 619.686,680.606 608.462,717.818 " fill="none" id="realime_predictor-to-prediction_handler" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="607.009,722.687,613.4138,715.2051,608.4376,717.8954,605.7473,712.9193,607.009,722.687" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="61" x="671" y="622.2104">store in db</text><!--MD5=[97444ac117ba73224fa2e15925887137]
+@startuml
+!define LIGHTSTYLE
+!includeurl https://gist.githubusercontent.com/rakesh4real/39df62ab1d17d252e20d42e9ef389c42/raw/ab750998a1ebd9ead7fbd4e5e20ad93c55bbb028/plantuml_style.puml
+
+
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+' scraper - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+
+class **WebScraper**{
+    + sess
+    + cur_response
+    - - -
+    cur_response <- goto(uri)
+    - - Helper Methods - -
+    find() 
+}
+
+note left of **WebScraper**::goto
+  fetch html data from uri and
+  store in cur_response
+end note
+
+note left of **WebScraper**::find
+  finds html tags, classes, ids
+end note
+
+
+class SummaryTableScraper << investing.com >>{
+    ~ get_technical_summary()
+    - -
+    get_pairs_info()
+    ..
+    use get_technical_summary() 
+    and return summary dictonary
+}
+
+object table_scraper {
+    fetch reatime summary and 
+    send to frontend
+}
+SummaryTableScraper <|- - table_scraper
+
+"**WebScraper**" <- - SummaryTableScraper : base
+
+note left of SummaryTableScraper::get_technical_summary
+  return intermediate data of 
+  scraped summary table
+end note
+
+
+
+class LiveCurPairScraper << investing.com >>{
+    + cur_pair
+    + interval
+    + uri
+    - -
+    get_data()
+    ..
+     return 
+    • req_time 
+    • response_time
+    • close
+    • per_change
+    • other indicators
+}
+
+"**WebScraper**" <- - LiveCurPairScraper: base
+
+object eurusd_scraper{
+    get_data()
+    ..
+    fetch realtime values
+}
+
+eurusd_scraper - -|> LiveCurPairScraper
+
+
+class DataValidator{
+    clean_realime_data()
+}
+
+object eurusd_realtime_validator{
+    clean reatime data and 
+    return cleaned data dicts
+     corresponding to schema
+}
+eurusd_realtime_validator - - - -|> DataValidator
+
+eurusd_realtime_validator::clean_realtime_data <.. eurusd_scraper::get_data
+eurusd_realtime_validator::clean_realtime_data ..> eurusd_handler: store in db
+
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+' databse - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+
+class **PostgresDB** {
+    + conn_details
+    + self.conn
+    - -
+    self.conn <- reset_conn()
+    - -
+    execute(sql_query)
+}
+
+note left of **PostgresDB**::reset_conn
+  close conn and create new conn
+end note
+
+
+class CurPairDataHandler{
+    + conn details
+    - - -
+    put_data()
+    get_data()
+    - - -
+    get_realtime_data()
+}
+
+"**PostgresDB**" <- - CurPairDataHandler: base
+
+object eurusd_handler {
+    store data in db
+    - -
+    get real-time data on request
+}
+eurusd_handler - -|> CurPairDataHandler
+
+class PredDataHandler{
+    put_predicton()
+}
+
+PredDataHandler - -> "**PostgresDB**": base
+
+object prediction_handler{
+    store predictions wrt 
+    model and data versions
+    and hyperparams
+}
+prediction_handler - -|> PredDataHandler
+
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+' realtime predictor - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+
+class RealtimePredictor{
+    preprocess()
+    - -
+    predict()
+    - -
+    postprocess()    
+}
+
+object realime_predictor{
+    predict and store in frontend
+}
+
+realime_predictor - -|> RealtimePredictor
+eurusd_handler ..> realime_predictor:  real-time values
+realime_predictor ...> prediction_handler: store in db
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor fff
+
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName Verdana
+}
+
+skinparam class {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  attributeFontColor 333
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor $ACCENT
+  borderColor $ACCENTDARK
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam collections {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam SequenceBox{
+    backgroundColor e0e0e0
+  borderColor cccccc
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor $ACCENT
+  borderColor $ACCENTDARK
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  lifeLineBorderColor $ACCENT
+  lifeLineBackgroundColor e0e0e0
+}
+
+skinparam boundary {
+    backgroundColor $ACCENT
+  borderColor $ACCENTDARK
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor $ACCENT
+  borderColor $ACCENTDARK
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor $ACCENT
+  borderColor $ACCENTDARK
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+  startColor $ACCENT
+  endColor $ACCENTDARK
+}
+
+
+skinparam object {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor $ACCENT
+  borderColor $ACCENTDARK
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+
+
+class **WebScraper**{
+    + sess
+    + cur_response
+    - - -
+    cur_response <- goto(uri)
+    - - Helper Methods - -
+    find() 
+}
+
+note left of **WebScraper**::goto
+  fetch html data from uri and
+  store in cur_response
+end note
+
+note left of **WebScraper**::find
+  finds html tags, classes, ids
+end note
+
+
+class SummaryTableScraper << investing.com >>{
+    ~ get_technical_summary()
+    - -
+    get_pairs_info()
+    ..
+    use get_technical_summary() 
+    and return summary dictonary
+}
+
+object table_scraper {
+    fetch reatime summary and 
+    send to frontend
+}
+SummaryTableScraper <|- - table_scraper
+
+"**WebScraper**" <- - SummaryTableScraper : base
+
+note left of SummaryTableScraper::get_technical_summary
+  return intermediate data of 
+  scraped summary table
+end note
+
+
+
+class LiveCurPairScraper << investing.com >>{
+    + cur_pair
+    + interval
+    + uri
+    - -
+    get_data()
+    ..
+     return 
+    • req_time 
+    • response_time
+    • close
+    • per_change
+    • other indicators
+}
+
+"**WebScraper**" <- - LiveCurPairScraper: base
+
+object eurusd_scraper{
+    get_data()
+    ..
+    fetch realtime values
+}
+
+eurusd_scraper - -|> LiveCurPairScraper
+
+
+class DataValidator{
+    clean_realime_data()
+}
+
+object eurusd_realtime_validator{
+    clean reatime data and 
+    return cleaned data dicts
+     corresponding to schema
+}
+eurusd_realtime_validator - - - -|> DataValidator
+
+eurusd_realtime_validator::clean_realtime_data <.. eurusd_scraper::get_data
+eurusd_realtime_validator::clean_realtime_data ..> eurusd_handler: store in db
+
+
+class **PostgresDB** {
+    + conn_details
+    + self.conn
+    - -
+    self.conn <- reset_conn()
+    - -
+    execute(sql_query)
+}
+
+note left of **PostgresDB**::reset_conn
+  close conn and create new conn
+end note
+
+
+class CurPairDataHandler{
+    + conn details
+    - - -
+    put_data()
+    get_data()
+    - - -
+    get_realtime_data()
+}
+
+"**PostgresDB**" <- - CurPairDataHandler: base
+
+object eurusd_handler {
+    store data in db
+    - -
+    get real-time data on request
+}
+eurusd_handler - -|> CurPairDataHandler
+
+class PredDataHandler{
+    put_predicton()
+}
+
+PredDataHandler - -> "**PostgresDB**": base
+
+object prediction_handler{
+    store predictions wrt 
+    model and data versions
+    and hyperparams
+}
+prediction_handler - -|> PredDataHandler
+
+
+class RealtimePredictor{
+    preprocess()
+    - -
+    predict()
+    - -
+    postprocess()    
+}
+
+object realime_predictor{
+    predict and store in frontend
+}
+
+realime_predictor - -|> RealtimePredictor
+eurusd_handler ..> realime_predictor:  real-time values
+realime_predictor ...> prediction_handler: store in db
+@enduml
+
+PlantUML version 1.2021.01beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,163 @@
+@startuml
+
+!define LIGHTSTYLE
+!includeurl https://gist.githubusercontent.com/rakesh4real/39df62ab1d17d252e20d42e9ef389c42/raw/ab750998a1ebd9ead7fbd4e5e20ad93c55bbb028/plantuml_style.puml
+
+
+' ---------------------------------------------------'
+' scraper -------------------------------------------'
+' ---------------------------------------------------'
+
+class **WebScraper**{
+    + sess
+    + cur_response
+    ---
+    cur_response <- goto(uri)
+    -- Helper Methods --
+    find() 
+}
+
+note left of **WebScraper**::goto
+  fetch html data from uri and
+  store in cur_response
+end note
+
+note left of **WebScraper**::find
+  finds html tags, classes, ids
+end note
+
+
+class SummaryTableScraper << investing.com >>{
+    ~ get_technical_summary()
+    --
+    get_pairs_info()
+    ..
+    use get_technical_summary() 
+    and return summary dictonary
+}
+
+object table_scraper {
+    fetch reatime summary and 
+    send to frontend
+}
+SummaryTableScraper <|-- table_scraper
+
+"**WebScraper**" <-- SummaryTableScraper : base
+
+note left of SummaryTableScraper::get_technical_summary
+  return intermediate data of 
+  scraped summary table
+end note
+
+
+
+class LiveCurPairScraper << investing.com >>{
+    + cur_pair
+    + interval
+    + uri
+    --
+    get_data()
+    ..
+     return 
+    • req_time 
+    • response_time
+    • close
+    • per_change
+    • other indicators
+}
+
+"**WebScraper**" <-- LiveCurPairScraper: base
+
+object eurusd_scraper{
+    get_data()
+    ..
+    fetch realtime values
+}
+
+eurusd_scraper --|> LiveCurPairScraper
+
+
+class DataValidator{
+    clean_realime_data()
+}
+
+object eurusd_realtime_validator{
+    clean reatime data and 
+    return cleaned data dicts
+     corresponding to schema
+}
+eurusd_realtime_validator ----|> DataValidator
+
+eurusd_realtime_validator::clean_realtime_data <.. eurusd_scraper::get_data
+eurusd_realtime_validator::clean_realtime_data ..> eurusd_handler: store in db
+
+' ---------------------------------------------------'
+' databse -------------------------------------------'
+' ---------------------------------------------------'
+
+class **PostgresDB** {
+    + conn_details
+    + self.conn
+    --
+    self.conn <- reset_conn()
+    --
+    execute(sql_query)
+}
+
+note left of **PostgresDB**::reset_conn
+  close conn and create new conn
+end note
+
+
+class CurPairDataHandler{
+    + conn details
+    ---
+    put_data()
+    get_data()
+    ---
+    get_realtime_data()
+}
+
+"**PostgresDB**" <-- CurPairDataHandler: base
+
+object eurusd_handler {
+    store data in db
+    --
+    get real-time data on request
+}
+eurusd_handler --|> CurPairDataHandler
+
+class PredDataHandler{
+    put_predicton()
+}
+
+PredDataHandler --> "**PostgresDB**": base
+
+object prediction_handler{
+    store predictions wrt 
+    model and data versions
+    and hyperparams
+}
+prediction_handler --|> PredDataHandler
+
+' ---------------------------------------------------'
+' realtime predictor --------------------------------'
+' ---------------------------------------------------'
+
+class RealtimePredictor{
+    preprocess()
+    --
+    predict()
+    --
+    postprocess()    
+}
+
+object realime_predictor{
+    predict and store in frontend
+}
+
+realime_predictor --|> RealtimePredictor
+eurusd_handler ..> realime_predictor:  real-time values
+realime_predictor ...> prediction_handler: store in db
+
+@enduml
