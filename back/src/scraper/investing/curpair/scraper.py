@@ -1,0 +1,1 @@
+from scraper.investing.curpair.scraper import
