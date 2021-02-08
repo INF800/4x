@@ -1,5 +1,0 @@
-requests
-requests-HTML
-pandas
-regex
-SQLAlchemy

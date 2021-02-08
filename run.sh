@@ -1,4 +1,4 @@
-( cd back && exec sh start.sh ) &
+( cd back/src && exec sh start.sh ) &
 ( cd front && exec sh start.sh ) &
 ( echo '\n\n\n==============================================================================================' ) &
 ( echo 'There are no ordinary moments. Welcome to 4x !!' ) &
