@@ -1,4 +1,5 @@
-from module.scraper.web_scraper import WebScraper
+from scraper.web_scraper import WebScraper
+from loguru import logger
 
 uri = 'https://www.investing.com/technical/technical-summary'
 
@@ -39,9 +40,9 @@ def proc_pair_info(pair_info):
     return true if all are either `Strong Buy` OR `Strong Sell`
     """
     if (len(set(pair_info['Summary'])) == 1) and (pair_info['Summary'][0][:6] == 'Strong'):
-        print(f"[TRUE] \t {pair_info['Pair']} \t : {pair_info['Summary']}")
+        logger.debug(f"[TRUE ] scored .. {pair_info['Pair']} : {pair_info['Summary']}")
         return True
-    print(f"[FALSE] \t {pair_info['Pair']} \t : {pair_info['Summary']}")
+    logger.debug(f"[FALSE] scored .. {pair_info['Pair']} : {pair_info['Summary']}")
     return False
 
 
@@ -59,8 +60,6 @@ class PairScores:
     
     def decrement(self, cur_weak_pair):
         self.scores[cur_weak_pair] = max(0, self.scores[cur_weak_pair]-1) 
-
-
 
 
 
