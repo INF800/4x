@@ -3,3 +3,4 @@ requests-HTML
 pandas
 regex
 SQLAlchemy
+pandas_datareader
